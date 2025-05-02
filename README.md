@@ -43,10 +43,10 @@ This installation guide will walk you through setting up WireGuard and Tor for a
 ### 6. Edit .bat Files
 - There are two important batch files you need to configure: `StartVPN.bat` and `StartTor.bat`.
   
-    **Example of `StartVPN.bat`:**
+    **Example of `StartTor.bat`:**
     ```batch
     echo Launching Proxifier...
-    start /min "" "YOUR PATH TO\LaunchProxifier.vbs"
+    start /min "" "PATHTOYOUR\LaunchProxifier.vbs"
     timeout /t 2 /nobreak >nul
     ```
 
@@ -55,17 +55,18 @@ This installation guide will walk you through setting up WireGuard and Tor for a
 ### 7. Set File Paths
 - Edit the configuration file to set the paths for WireGuard, Tor, and other components:
 
+    **Example of `StartVPN.bat`:**
     ```batch
     set "WIREGUARD_PATH=C:\Program Files\WireGuard"
     set "TOR_PATH=C:\Program Files\Tor Browser\Browser\TorBrowser\Tor"
-    set "CONFIG_PATH=YOUR PATH TO\wg-config.conf"
-    set "TORRC_PATH=YOUR PATH TO\torrc"
-    set "PROXIFIER_PATH=YOUR PATH TO\LaunchProxifier.vbs"
-    set "ASCII_ART_PATH=YOUR PATH TO\ascii.txt"
+    set "CONFIG_PATH=PATHTOYOUR\wg-config.conf"
+    set "TORRC_PATH=PATHTOYOUR\torrc"
+    set "PROXIFIER_PATH=PATHTOYOUR\LaunchProxifier.vbs"
+    set "ASCII_ART_PATH=PATHTOYOUR\ascii.txt"
     set "IPDATA_API_URL=https://api.ipdata.co/?api-key=8701de3ac942a16e52762033f240682911128f1d6a0a2e31cc70bbb9"
     ```
 
-    Replace `YOUR PATH TO` with the actual path where the files are stored.
+    Replace `PATHTOYOUR` with the actual path where the files are stored.
 
 ---
 
@@ -94,7 +95,7 @@ This installation guide will walk you through setting up WireGuard and Tor for a
 ## WireGuard Configuration
 
 ### 9. WireGuard Config File
-Here’s a sample WireGuard config file to use:
+To be clear do not REPLACE the config file just add this stuff to it.
 
 ```ini
 [Interface]
