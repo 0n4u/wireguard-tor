@@ -95,14 +95,14 @@ Replace `PATHTOYOUR` with the actual path where the files are stored.
 
 3. Set up proxification rules:
    - **Exclude WireGuard/Tor**: In **Applications**, add:
-     ```
+
      firefox.exe; nmhproxy.exe; plugin-container.exe; updater.exe; tor.exe; wireguard.exe; wg.exe
-     ```
+
      - Set **Action** to **Direct**.
 
    - **All Applications**: Create a rule for all applications with the following settings:
-     - **Application**: `*`
-     - **Target Hosts**: `*`
+     - **Application**: *
+     - **Target Hosts**: *
      - **Action**: **Proxy Socks 127.0.0.1**.
 
 ---
