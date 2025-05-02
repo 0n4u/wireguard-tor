@@ -1,0 +1,42 @@
+###############
+## Core Setup
+###############
+
+SocksPort 9050
+ControlPort 9051
+
+###############
+## Performance and Node Selection
+###############
+
+# Allow Tor to pick its own entry nodes dynamically (no restrictions)
+NumEntryGuards 8
+
+# Speed up circuit creation by increasing the number of pending circuits
+MaxClientCircuitsPending 100
+
+# Shorten circuit lifetime for faster cycling (optional)
+NewCircuitPeriod 10
+MaxCircuitDirtiness 10
+
+###############
+## Privacy and Speed Improvements
+###############
+
+# Disable GeoIP lookups to reduce overhead and improve speed
+GeoIPFile /dev/null
+GeoIPv6File /dev/null
+
+# Prevent Tor from writing sensitive information to disk (optional)
+AvoidDiskWrites 1
+SafeLogging 1
+
+###############
+## Data Storage and Security
+###############
+
+# Use a RAM-only directory for data storage (optional for better security and performance)
+DataDirectory C:\Users\Admin\AppData\Local\Temp\TorData
+
+# Do not use bridges unless required
+UseBridges 0
