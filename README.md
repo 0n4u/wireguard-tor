@@ -59,11 +59,10 @@ Navigate to `C:\Program Files\Tor Browser\Browser\TorBrowser\Tor` and run `tor.e
 There are two key batch files that need editing: `StartVPN.bat` and `StartTor.bat`.
 
 #### Example of `StartTor.bat`:
-```batch
 echo Launching Proxifier...
 start /min "" "PATHTOYOUR\LaunchProxifier.vbs"
 timeout /t 2 /nobreak >nul
-```
+
 
 Make sure all the files are in the same folder, and update the path in the batch file to reflect your file locations.
 
@@ -72,7 +71,6 @@ Make sure all the files are in the same folder, and update the path in the batch
 Edit the configuration file to set the correct paths for WireGuard, Tor, and other components.
 
 #### Example of `StartVPN.bat`:
-```batch
 set "WIREGUARD_PATH=C:\Program Files\WireGuard"
 set "TOR_PATH=C:\Program Files\Tor Browser\Browser\TorBrowser\Tor"
 set "CONFIG_PATH=PATHTOYOUR\wg-config.conf"
@@ -80,7 +78,7 @@ set "TORRC_PATH=PATHTOYOUR\torrc"
 set "PROXIFIER_PATH=PATHTOYOUR\LaunchProxifier.vbs"
 set "ASCII_ART_PATH=PATHTOYOUR\ascii.txt"
 set "IPDATA_API_URL=https://api.ipdata.co/?api-key=8701de3ac942a16e52762033f240682911128f1d6a0a2e31cc70bbb9"
-```
+
 
 Replace `PATHTOYOUR` with the actual path where the files are stored.
 
