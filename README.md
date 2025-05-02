@@ -1,5 +1,3 @@
-Here's the entire guide in a single file, ready for you to copy and paste:
-
 ```markdown
 # Installation Guide for VPN + Tor Setup  
 *(Yes, I used ChatGPT to make this README look good – sue me)*
@@ -129,5 +127,3 @@ PersistentKeepalive = 25
 
 ---
 ```
-
-This should now be in one file that you can easily copy and paste!
